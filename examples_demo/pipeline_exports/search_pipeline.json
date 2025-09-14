@@ -1,0 +1,28 @@
+{
+    "metadata": {},
+    "max_runs_per_component": 100,
+    "components": {
+        "bm25_retriever": {
+            "type": "haystack.components.retrievers.in_memory.bm25_retriever.InMemoryBM25Retriever",
+            "init_parameters": {
+                "document_store": {
+                    "type": "haystack.document_stores.in_memory.document_store.InMemoryDocumentStore",
+                    "init_parameters": {
+                        "bm25_tokenization_regex": "(?u)\\b\\w\\w+\\b",
+                        "bm25_algorithm": "BM25L",
+                        "bm25_parameters": {},
+                        "embedding_similarity_function": "dot_product",
+                        "index": "9bcb260d-de08-4146-8e22-370636a68295",
+                        "return_embedding": true
+                    }
+                },
+                "filters": null,
+                "top_k": 5,
+                "scale_score": false,
+                "filter_policy": "replace"
+            }
+        }
+    },
+    "connections": [],
+    "connection_type_validation": true
+}

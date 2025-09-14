@@ -3,8 +3,10 @@ qa.db
 **/qa.db
 **/*qa*.db
 **/test-reports
+# SPDX-FileCopyrightText: 2022-present deepset GmbH <info@deepset.ai>
+#
+# SPDX-License-Identifier: Apache-2.0
 
-# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
@@ -74,8 +76,8 @@ instance/
 # Scrapy stuff:
 .scrapy
 
-# documentation
-docs/pydoc/temp/
+# Sphinx documentation
+docs/_build/
 
 # PyBuilder
 target/
@@ -97,7 +99,7 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# pyflow
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
 # Celery stuff
@@ -133,6 +135,83 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Haystack Learning Project Specific
+# API Keys and Secrets
+*.key
+secrets/
+config/local.yaml
+config/production.yaml
+
+# Learning Progress and Personal Notes
+progress/
+learning_notes/
+personal_projects/
+scratch/
+
+# Data Files and Models
+data/raw/
+data/processed/
+models/downloaded/
+embeddings/cache/
+*.pickle
+*.joblib
+
+# Temporary Pipeline Files
+temp_pipeline.yaml
+pipeline_snapshots/
+breakpoint_files/
+
+# Vector Database Files
+*.faiss
+*.annoy
+chroma_db/
+pinecone_cache/
+
+# Document Store Files
+documents/
+document_cache/
+elasticsearch_data/
+
+# API Response Cache
+api_cache/
+response_cache/
+
+# Performance and Profiling
+profiling_results/
+benchmark_results/
+*.prof
+
+# IDE and Editor Files
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Kubernetes
+k8s/secrets/
+k8s/configmaps/
+
+# Logs and Debugging
+logs/
+debug_output/
+error_logs/
+*.log.*
 
 # PyCharm
 .idea

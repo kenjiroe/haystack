@@ -1,0 +1,15 @@
+{
+  "processed_files": [
+    "Materialism.txt",
+    "Strasbourg.txt",
+    "Culture.txt",
+    "War_on_Terror.txt"
+  ],
+  "statistics": {
+    "files_processed": 4,
+    "documents_created": 122,
+    "total_size_kb": 89.208984375,
+    "average_file_size": 22.30224609375
+  },
+  "document_count": 122
+}
